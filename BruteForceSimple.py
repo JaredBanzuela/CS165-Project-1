@@ -3,9 +3,9 @@ import string
 import time
 from passlib.hash import md5_crypt
 
-salt = "hfT7jp2q"
-password = "zzzhhh"
-full_hash = "$1$hfT7jp2q$ksyQH0vzd6XE0B6mJEq4//"
+# team 31 salt and hash
+salt = "w2wGV6Vn"
+full_hash = "$1$w2wGV6Vn$Kw7FW.cpnlAQSpSpF25Xo/"
 
 # Define all characters to use in the password
 chars = 'abcdefghijklmnopqurstuvwxyz'
@@ -19,7 +19,7 @@ start_time = time.time()
 
 # Try all possible combinations of characters up to max_length
 for length in range(6, max_length + 1):
-    for combination in itertools.product(rchars, repeat=length):
+    for combination in itertools.product(chars, repeat=length):
         # Join the characters in the combination to form a password candidate
         candidate = "".join(combination)
         print("Trying password:", candidate)
