@@ -11,14 +11,15 @@ full_hash = "$1$w2wGV6Vn$Kw7FW.cpnlAQSpSpF25Xo/"
 chars = 'abcdefghijklmnopqurstuvwxyz'
 rchars = 'zyxwvutsruqponmlkjihgfedcba'
 
-# Define the maximum password length to try
+# Define the maximum and minumum password length to try
 max_length = 6
+min_length = 6
 
 # Track the start time of the password cracking process
 start_time = time.time()
 
 # Try all possible combinations of characters up to max_length
-for length in range(6, max_length + 1):
+for length in range(min_length, max_length + 1):
     for combination in itertools.product(chars, repeat=length):
         # Join the characters in the combination to form a password candidate
         candidate = "".join(combination)
