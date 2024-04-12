@@ -3,6 +3,8 @@ import string
 import time
 from passlib.hash import md5_crypt
 
+# Password Cracker Code based off : https://github.com/lunarluvia/Brute-Force-Password-Cracker
+
 # team 31 salt and hash
 salt = "w2wGV6Vn"
 full_hash = "$1$w2wGV6Vn$Kw7FW.cpnlAQSpSpF25Xo/"
