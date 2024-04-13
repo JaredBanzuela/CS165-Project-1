@@ -13,8 +13,8 @@ def passwrd_finder(first_letter, hash, salt, event):
     num_passwords = 0
     try:
         tmp = md5_crypt.using(salt=salt)
-        for length in range(1, max_length + 1):
-            for combination in itertools.product(chars, repeat=length):       
+        for length in range(6, 0, -1):
+            for combination in itertools.product(chars, repeat=length-1):       
                 candidate = first_letter + "".join(combination)
                 hashed_password = tmp.hash(candidate)
                 num_passwords += 1
