@@ -2,4 +2,4 @@ Team 31: Jared Banzuela and Arturo Millan
 Password: rvftos
 CPU: AMD Ryzen 9 6900HS with Radeon Graphics (8 cores)
 Processes Used: 26 
-Throughput: 
+Throughput: ~800 passwords per second per process for 8 cores = 6400 passwords per second (probably less due to non-pool method)
